@@ -1,0 +1,124 @@
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+.container{
+    text-align: center;
+}
+
+h1{
+    color: #ff00ffca;
+    text-shadow: 2px 2px 12px #ff00ff, 0 0 35px #7900ff;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style: normal;
+    letter-spacing: 1em;
+
+}
+
+.task-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 16px 20px;
+    margin: 12px auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    animation: slideIn 0.6s ease-out;
+}
+
+.task-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 40px #d400ff;
+    border-color: #d400ff;
+}
+
+.task-item button {
+    background: transparent;
+    border: 2px solid #ff006e;
+    color: #ff006e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.task-item button:hover {
+    background: #ff006e;
+    color: white;
+    box-shadow: 0 0 20px #ff006e;
+}
+
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    animation: drop 0.9s ease-out;
+}
+
+input {
+    flex: 1;
+    padding: 18px;
+    border: 2px solid #00f2ff;
+    background: rgba(0, 242, 255, 0.1);
+    border-radius: 50px;
+    color: black;
+    font-size: 1.1rem;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+input:focus {
+    box-shadow: 0 0 25px #00eaff, 0 0 50px #00f2ff;
+    border-color: #00eaff;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+button {
+    padding: 18px 40px;
+    background: linear-gradient(45deg, #ff006e, #8338ec);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.6);
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff00c8, 0 0 50px #8338ec;;
+}
+
+
+@keyframes drop {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }}
