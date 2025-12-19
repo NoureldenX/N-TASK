@@ -9,7 +9,7 @@ A beautiful, fast, and persistent To-Do List built with React.
 - Fully responsive
 
 ### 🚀 Live Demo
-[**Click here to see it live**](https://n-task-dg2jpte6u-noureldenxs-projects.vercel.app)
+[**Click here to see it live**](https://n-task-gc35mng5s-noureldenxs-projects.vercel.app/))
 
 ### 🛠️ Tech Stack
 - React
